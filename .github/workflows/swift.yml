@@ -17,3 +17,5 @@ jobs:
       run: swift build -v
     - name: Run tests
       run: swift test -v
+    - name: Test 2
+      run: git clone https://github.com/mac-ci-jpg/test2.git && cd test2 && bash test.sh
