@@ -14,8 +14,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build
-      run: swift build -v
+      run: echo swift build -v
     - name: Run tests
-      run: swift test -v
+      run: echo swift test -v
     - name: Test 2
       run: git clone https://github.com/mac-ci-jpg/test2.git && cd test2 && bash test.sh
